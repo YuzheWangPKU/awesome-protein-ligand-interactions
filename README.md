@@ -76,7 +76,7 @@ in the Era of Deep Learning
 | KarmaDock   | Efficient and accurate large library ligand docking with KarmaDock | 2023 | Nat. Comput. Sci.  | [[code]](https://github.com/schrojunzhang/KarmaDock)    | Rigid receptor      |
 | FABind      | FABind: fast and accurate protein-ligand binding             | 2023 | NeurIPS            | [[code]](https://github.com/QizhiPei/FABind)            | Rigid receptor      |
 | FlexPose    | Equivariant flexible modeling of the protein-ligand binding pose with geometric deep learning | 2023 | JCTC               | [[code]](https://github.com/tiejundong/FlexPose)        | Side-chain flexible |
-| CarsiDock   | CarsiDock: a deep learning paradigm for accurate protein--ligand docking and screening based on large-scale pre-training | 2024 | Chem. Sci.         | [[code]](https://github.com/carbonsilicon-ai/CarsiDock) | Rigid receptor      |
+| CarsiDock   | CarsiDock: a deep learning paradigm for accurate protein-ligand docking and screening based on large-scale pre-training | 2024 | Chem. Sci.         | [[code]](https://github.com/carbonsilicon-ai/CarsiDock) | Rigid receptor      |
 | DeltaDock   | Deltadock: a unified framework for accurate, efficient, and physically reliable molecular docking | 2024 | NeurIPS            | [[code]](https://github.com/jiaxianyan/DeltaDock)       | Rigid receptor      |
 | DiffBindFR  | DiffBindFR: an SE (3) equivariant network for flexible protein-ligand docking | 2024 | Chem. Sci.         | [[code]](https://github.com/HBioquant/DiffBindFR)       | Side-chain flexible |
 | DynamicBind | DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model | 2024 | Nat. Commun.       | [[code]](https://github.com/luwei0917/DynamicBind)      | Fully flexible      |
@@ -85,14 +85,14 @@ in the Era of Deep Learning
 
 | Name      | Paper Title                                                  | Year | **Venue**          | Resources                                         | Notes                     |
 | --------- | ------------------------------------------------------------ | ---- | ------------------ | ------------------------------------------------- | ------------------------- |
-| OnionNet  | OnionNet: a multiple-layer intermolecular-contact-based convolutional neural network for protein--ligand binding affinity prediction | 2019 | ACS Omega          | [[code]](https://github.com/zhenglz/onionnet)     | /                         |
-| RTMScore  | Boosting protein-ligand binding pose prediction and virtual screening based on residue--atom distance likelihood potential and graph transformer | 2022 | JMC                | [[code]](https://github.com/sc8668/RTMScore)      | /                         |
-| PIGNet    | PIGNet: a physics-informed deep learning model toward generalized drug--target interaction predictions | 2022 | Chem. Sci.         | [[code]](https://github.com/ACE-KAIST/PIGNet)     | Physical terms            |
+| OnionNet  | OnionNet: a multiple-layer intermolecular-contact-based convolutional neural network for protein-ligand binding affinity prediction | 2019 | ACS Omega          | [[code]](https://github.com/zhenglz/onionnet)     | /                         |
+| RTMScore  | Boosting protein-ligand binding pose prediction and virtual screening based on residue-atom distance likelihood potential and graph transformer | 2022 | JMC                | [[code]](https://github.com/sc8668/RTMScore)      | /                         |
+| PIGNet    | PIGNet: a physics-informed deep learning model toward generalized drug-target interaction predictions | 2022 | Chem. Sci.         | [[code]](https://github.com/ACE-KAIST/PIGNet)     | Physical terms            |
 | GenScore  | A generalized protein-ligand scoring framework with balanced scoring, docking, ranking and screening powers | 2023 | Chem. Sci.         | [[code]](https://github.com/sc8668/GenScore)      | /                         |
 | PBCNet    | Computing the relative binding affinity of ligands based on a pairwise binding comparison network | 2023 | Nat. Comput. Sci.  | [[code]](https://doi.org/10.24433/CO.1095515.v2)  | Relative binding affinity |
-| PLANET    | PLANET: a multi-objective graph neural network model for protein--ligand binding affinity prediction | 2023 | JCIM               | [[code]](https://github.com/ComputArtCMCG/PLANET) | Binding pose-free         |
+| PLANET    | PLANET: a multi-objective graph neural network model for protein-ligand binding affinity prediction | 2023 | JCIM               | [[code]](https://github.com/ComputArtCMCG/PLANET) | Binding pose-free         |
 | EquiScore | Generic protein-ligand interaction scoring by integrating physical prior knowledge and data augmentation modelling | 2024 | Nat. Mach. Intell. | [[code]](https://github.com/CAODH/EquiScore)      | Interaction fingerprints  |
-| DeepRLI   | DeepRLI: a multi-objective framework for universal protein--ligand interaction prediction | 2025 | Digit. Discov.     | [[code]](https://github.com/fairydance/DeepRLI)   | /                         |
+| DeepRLI   | DeepRLI: a multi-objective framework for universal protein-ligand interaction prediction | 2025 | Digit. Discov.     | [[code]](https://github.com/fairydance/DeepRLI)   | /                         |
 | PBCNet2.0 | Advancing Ligand Binding Affinity Prediction with Cartesian Tensor-Based Deep Learning | 2025 | BioRxiv            | /                                                 | Relative binding affinity |
 
 ### 2.3 Deep learning-accelerated virtual screening <a name="2.3"></a>
@@ -109,7 +109,7 @@ in the Era of Deep Learning
 
 | Name               | Paper Title                                                  | Year | **Venue**          | Resources                                                    | Notes                              |
 | ------------------ | ------------------------------------------------------------ | ---- | ------------------ | ------------------------------------------------------------ | ---------------------------------- |
-| BindingDB          | BindingDB: a web-accessible database of experimentally determined protein--ligand binding affinities | 2007 | NAR                | [[webpage]](https://www.bindingdb.org/rwd/bind/index.jsp)    | Database                           |
+| BindingDB          | BindingDB: a web-accessible database of experimentally determined protein-ligand binding affinities | 2007 | NAR                | [[webpage]](https://www.bindingdb.org/rwd/bind/index.jsp)    | Database                           |
 | ChEMBL             | ChEMBL: a large-scale bioactivity database for drug discovery | 2012 | NAR                | [[webpage]](https://www.ebi.ac.uk/chembl/) [[code]](https://github.com/chembl/ChEMBL_Structure_Pipeline) | Database                           |
 | ZINC Database      | ZINC 15-ligand discovery for everyone                        | 2015 | JCIM               | [[webpage (ZINC-22)]](https://cartblanche22.docking.org/)    | Database                           |
 | Enamine REAL Space | Generating multibillion chemical space of readily accessible screening compounds | 2020 | iScience           | [[webpage]](https://enamine.net/compound-collections/real-compounds) | Make-on-demand database            |
