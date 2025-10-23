@@ -2,8 +2,8 @@
 💊📝 Awesome Protein-Ligand Interactions
 </h1>
 
-Modeling Protein-Ligand Interactions for Drug Discovery
-in the Era of Deep Learning
+This is the official repository for the review article *"Modeling Protein–Ligand Interactions for Drug Discovery in the Era of Deep Learning"* published in *Chemical Society Reviews*. [[link]](https://doi.org/10.1039/D5CS00415B). We curate papers, tools, and resources related to deep learning-based
+modeling of protein–ligand interactions for drug discovery.
 
 <p align="center">
   <img src="overview.png" width="512">
@@ -11,23 +11,24 @@ in the Era of Deep Learning
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [1. Deep Learning-Augmented Molecular Dynamics ](#1-deep-learning-augmented-molecular-dynamics-)
-  - [1.1 MD simulations of protein-ligand complexes with MLFFs ](#11-md-simulations-of-protein-ligand-complexes-with-mlffs-)
-  - [1.2 Characterizing protein-ligand interactions using MD trajectories ](#12-characterizing-protein-ligand-interactions-using-md-trajectories-)
-  - [1.3 Benchmarks, datasets, and tools ](#13-benchmarks-datasets-and-tools-)
-- [2. Deep Learning-Enhanced Molecular Docking and Virtual Screening ](#2-deep-learning-enhanced-molecular-docking-and-virtual-screening-)
-  - [2.1 Deep learning-based docking methods ](#21-deep-learning-based-docking-methods-)
-  - [2.2 Deep learning scoring functions and binding affinity prediction ](#22-deep-learning-scoring-functions-and-binding-affinity-prediction-)
-  - [2.3 Deep learning-accelerated virtual screening ](#23-deep-learning-accelerated-virtual-screening-)
-  - [2.4 Benchmarks, datasets, and tools ](#24-benchmarks-datasets-and-tools-)
-- [3. End-to-End Structural Modeling ](#3-end-to-end-structural-modeling-)
-  - [3.1 Protein structure prediction with applications in drug discovery ](#31-protein-structure-prediction-with-applications-in-drug-discovery-)
-  - [3.2 Generative modeling of protein–ligand complexes ](#32-generative-modeling-of-proteinligand-complexes-)
-- [4. Structure-Based *De Novo* Drug Design with Deep Generative Models ](#4-structure-based-de-novo-drug-design-with-deep-generative-models-)
-  - [4.1 Structure-based de novo drug design methods ](#41-structure-based-de-novo-drug-design-methods-)
-  - [4.2 Ligand-based design and lead optimization methods ](#42-ligand-based-design-and-lead-optimization-methods-)
-  - [4.3 Benchmarks, datasets, and tools ](#43-benchmarks-datasets-and-tools-)
-- [5. Sequence-Based Methods for Drug Discovery ](#5-sequence-based-methods-for-drug-discovery-)
+- [1. Deep Learning-Augmented Molecular Dynamics](#1)
+  - [1.1 MD simulations of protein-ligand complexes with MLFFs](#1.1)
+  - [1.2 Learning protein-ligand interactions from MD trajectories](#1.2)
+  - [1.3 Deep learning-accelerated sampling and trajectory generation](#1.3)
+  - [1.4 Benchmarks, datasets, and tools](#1.4)
+- [2. Deep Learning-Enhanced Molecular Docking and Virtual Screening](#2)
+  - [2.1 Deep learning-based docking methods](#2.1)
+  - [2.2 Deep learning scoring functions and binding affinity prediction](#2.2)
+  - [2.3 Deep learning-accelerated virtual screening](#2.3)
+  - [2.4 Benchmarks, datasets, and tools](#2.4)
+- [3. End-to-End Structural Modeling](#3)
+  - [3.1 Protein structure prediction with applications in drug discovery](#3.1)
+  - [3.2 Generative modeling of protein–ligand complexes](#3.2)
+- [4. Structure-Based *De Novo* Drug Design](#4)
+  - [4.1 Structure-based de novo drug design methods](#4.1)
+  - [4.2 Ligand-based design and lead optimization methods](#4.2)
+  - [4.3 Benchmarks, datasets, and tools](#4.3)
+- [5. Sequence-Based Methods for Drug Discovery](#5)
 
 ## 1. Deep Learning-Augmented Molecular Dynamics <a name="1"></a>
 
@@ -43,23 +44,31 @@ in the Era of Deep Learning
 | espaloma-0.3     | Machine-learned molecular mechanics force fields from large-scale quantum chemical data | 2024 | Chem. Sci. | [[code]](https://github.com/choderalab/refit-espaloma)       | Native MLFF |
 | QuantumBind-RBFE | QuantumBind-RBFE: accurate relative binding free energy calculations using neural network potentials | 2025 | JCIM       | [[code]](https://github.com/Acellera/quantumbind_rbfe)       | NNP/MM      |
 
-### 1.2 Characterizing protein-ligand interactions using MD trajectories <a name="1.2"></a>
-
-| Name   | Paper Title                                                  | Year | Venue             | Resources                                                    | Notes                             |
-| ------ | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ | --------------------------------- |
-| SPICE  | Spice, a dataset of drug-like molecules and peptides for training machine learning potentials | 2023 | Sci. Data         | [[data]](https://zenodo.org/records/7338495) [[code]](https://github.com/openmm/spice-dataset) | QM calculations                   |
-| MISATO | MISATO: machine learning dataset of protein-ligand complexes for structure-based drug discovery | 2024 | Nat. Comput. Sci. | [[data]](https://zenodo.org/records/7711953) [[code]](https://github.com/t7morgen/misato-dataset/) | QM calculations & MD trajectories |
-| OMol25 | The Open Molecules 2025 (OMol25) dataset, evaluations, and models | 2025 | arXiv             | [[data]](https://huggingface.co/facebook/OMol25) [[code]](https://github.com/facebookresearch/fairchem) [[blog]](https://ai.meta.com/blog/meta-fair-science-new-open-source-releases/) | QM calculations                   |
-| DD-13M | Enhanced sampling, public dataset and generative model for drug-protein dissociation dynamics | 2025 | arXiv             | [[data]](https://huggingface.co/SZBL-IDEA)                   | MD trajectories                   |
-
-### 1.3 Benchmarks, datasets, and tools <a name="1.3"></a>
+### 1.2 Learning protein-ligand interactions from MD trajectories <a name="1.2"></a>
 
 | Name       | Paper Title                                                  | Year | **Venue**    | Resources                                        |
 | ---------- | ------------------------------------------------------------ | ---- | ------------ | ------------------------------------------------ |
 | NRI-MD     | Neural relational inference to learn long-range allosteric interactions in proteins from molecular dynamics simulations | 2022 | Nat. Commun. | [[code]](https://github.com/juexinwang/NRI-MD)   |
 | ProtMD     | Pre-training of equivariant graph matching networks with conformation flexibility for drug binding | 2022 | Adv. Sci.    | [[code]](https://github.com/smiles724/ProtMD)    |
 | Dynaformer | From static to dynamic structures: improving binding affinity prediction with graph-based deep learning | 2024 | Adv. Sci.    | [[code]](https://github.com/Minys233/Dynaformer) |
+| MDbind | Spatio-temporal learning from molecular dynamics simulations for protein–ligand binding affinity prediction | 2025 | Bioinfomatics    | [[code]]([https://github.com/ICOA-SBC/MD_DL_BA](https://github.com/ICOA-SBC/MD_DL_BA)) |
 
+### 1.3 Deep learning-accelerated sampling and trajectory generation <a name="1.3"></a>
+
+| Name       | Paper Title                                                  | Year | **Venue**    | Resources                                        |
+| ---------- | ------------------------------------------------------------ | ---- | ------------ | ------------------------------------------------ |
+| BioMD     | BioMD: All-atom Generative Model for Biomolecular Dynamics Simulation | 2025 | arXiv | /   |
+
+### 1.4 Benchmarks, datasets, and tools <a name="1.4"></a>
+
+| Name   | Paper Title                                                  | Year | Venue             | Resources                                                    | Notes                             |
+| ------ | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ | --------------------------------- |
+| SPICE  | SPICE, a dataset of drug-like molecules and peptides for training machine learning potentials | 2023 | Sci. Data         | [[data]](https://zenodo.org/records/7338495) [[code]](https://github.com/openmm/spice-dataset) | QM calculations                   |
+| MISATO | MISATO: machine learning dataset of protein-ligand complexes for structure-based drug discovery | 2024 | Nat. Comput. Sci. | [[data]](https://zenodo.org/records/7711953) [[code]](https://github.com/t7morgen/misato-dataset/) | QM calculations & MD trajectories |
+| PLAS-20k | PLAS-20k: extended dataset of protein-ligand affinities from MD simulations for machine learning Applications | 2024 | Sci. Data | [[data]]([https://doi.org/10.6084/m9.figshare.c.6742521.v2](https://doi.org/10.6084/m9.figshare.c.6742521.v2)) | MD trajectories & MMPBSA calculations |
+| OMol25 | The Open Molecules 2025 (OMol25) dataset, evaluations, and models | 2025 | arXiv             | [[data]](https://huggingface.co/facebook/OMol25) [[code]](https://github.com/facebookresearch/fairchem) [[blog]](https://ai.meta.com/blog/meta-fair-science-new-open-source-releases/) | QM calculations                   |
+| DD-13M | Enhanced sampling, public dataset and generative model for drug-protein dissociation dynamics | 2025 | arXiv             | [[data]](https://huggingface.co/SZBL-IDEA)                   | MD trajectories                   |
+| qcMol | qcMol: a large-scale dataset of 1.2 million molecules with high-quality quantum chemical annotations for molecular representation learning | 2025 | BioRxiv             | [[webpage]](https://structpred.life.tsinghua.edu.cn/qcmol/)                   | QM calculations                   |
 
 ## 2. Deep Learning-Enhanced Molecular Docking and Virtual Screening <a name="2"></a>
 
@@ -94,6 +103,8 @@ in the Era of Deep Learning
 | EquiScore | Generic protein-ligand interaction scoring by integrating physical prior knowledge and data augmentation modelling | 2024 | Nat. Mach. Intell. | [[code]](https://github.com/CAODH/EquiScore)      | Interaction fingerprints  |
 | DeepRLI   | DeepRLI: a multi-objective framework for universal protein-ligand interaction prediction | 2025 | Digit. Discov.     | [[code]](https://github.com/fairydance/DeepRLI)   | /                         |
 | PBCNet2.0 | Advancing Ligand Binding Affinity Prediction with Cartesian Tensor-Based Deep Learning | 2025 | BioRxiv            | /                                                 | Relative binding affinity |
+| BioScore | BioScore: A Foundational Scoring Function For Diverse Biomolecular Complexes | 2025 | arXiv            | /                                                 | A unified scoring function |
+
 
 ### 2.3 Deep learning-accelerated virtual screening <a name="2.3"></a>
 
@@ -117,6 +128,8 @@ in the Era of Deep Learning
 | Leak Proof PDBBind | Leak proof pdbbind: a reorganized dataset of protein-ligand complexes for more generalizable binding affinity prediction | 2024 | arXiv              | [[code]](https://github.com/THGLab/LP-PDBBind)               | Dataset split                      |
 | SPECTRA            | Evaluating generalizability of artificial intelligence models for molecular datasets | 2024 | Nat. Mach. Intell. | [[code]](https://github.com/mims-harvard/SPECTRA)            | Framework for model evaluation     |
 | SAIR               | SAIR: Enabling deep learning for protein-ligand lnteractions with a synthetic structural dataset | 2025 | BioRxiv            | [[data]](https://pub.sandboxaq.com/data/ic50-dataset)        | Database, AF3-predicted structures |
+| QUID               | Extending quantum-mechanical benchmark accuracy to biological ligand-pocket interactions | 2025 | Nat. Commun.            | [[data]]([https://github.com/MirelaVP/QUID)        | Benchmark, QM-level pocket-ligand interaction systems  |
+| BindFlow               | BindFlow: a free, user-friendly pipeline for absolute binding free energy calculations using free energy perturbation or MM(PB/GB)SA | 2025 | BioRxiv            | [[code]]([https://github.com/ale94mleon/BindFlow](https://github.com/ale94mleon/BindFlow))        | Tool, FEP & MM(PB/GB)SA pipeline |
 
 ## 3. End-to-End Structural Modeling <a name="3"></a>
 
@@ -141,7 +154,8 @@ in the Era of Deep Learning
 | Protenix             | Protenix-advancing structure prediction through a comprehensive AlphaFold3 reproduction | 2024 | BioRxiv            | [[code]](https://github.com/bytedance/Protenix) [[server]](https://protenix-server.com/login) | /                                         |
 | Boltz-1              | Boltz-1: democratizing biomolecular interaction modeling     | 2024 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[blog]](https://jclinic.mit.edu/boltz-1/) | /                                         |
 | Boltz-2              | Towards accurate and efficient binding affinity prediction   | 2025 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[design-code]](https://github.com/recursionpharma/synflownet-boltz) | FEP-level affinity prediciton             |
-| Chai-2               | Zero-shot antibody design in a 24-well plate                 | 2025 | /                  | [[blog]](https://www.chaidiscovery.com/news/introducing-chai-2) | Minibinder & antibody prediction & design |
+| Chai-2               | Zero-shot antibody design in a 24-well plate                 | 2025 | BioRxiv                  | [[blog]](https://www.chaidiscovery.com/news/introducing-chai-2) | Minibinder & antibody prediction & design |
+| RF3               | Accelerating Biomolecular Modeling with AtomWorks and RF3                 | 2025 | BioRxiv                  | [[code]]([https://github.com/RosettaCommons/atomworks](https://github.com/RosettaCommons/atomworks)) | AtomWorks framework |
 
 
 ## 4. Structure-Based *De Novo* Drug Design with Deep Generative Models <a name="4"></a>
@@ -169,7 +183,10 @@ in the Era of Deep Learning
 | Lingo3DMol      | Generation of 3D molecules in pockets via a language model   | 2024 | Nat. Mach. Intell. | [[code]](https://github.com/stonewiseAIDrugDesign/Lingo3DMol) | Autoregressive LM, fragment                      |
 | KGDiff          | KGDiff: towards explainable target-aware molecule generation with knowledge guidance | 2024 | Brief. Bioinform.  | [[code]](https://github.com/CMACH508/KGDiff)                 | Non-autoregressive, Vina scoring guidance        |
 | FlexSBDD        | FlexSBDD: structure-based drug design with flexible protein modeling | 2024 | NeurIPS            | /                                                            | Non-autoregressive, dynamic pocket               |
+| PocketXMol        | Atom-level generative foundation model for molecular interaction with pockets | 2024 | BioRxiv            | [[code]](https://github.com/pengxingang/PocketXMol)                                                            | Non-autoregressive, atom-level generative foundation
+model               |
 | DynamicFlow     | Integrating protein dynamics into structure-based drug design via full-atom stochastic flows | 2025 | ICLR               | /                                                            | Non-autoregressive, dynamic pocket               |
+| DrugFlow & FlexFlow     | Multi-domain Distribution Learning for De Novo Drug Design | 2025 | ICLR               | [[code]](https://github.com/LPDI-EPFL/DrugFlow)                                                            | Non-autoregressive, flexible side-chains               |
 
 ### 4.2 Ligand-based design and lead optimization methods <a name="4.2"></a>
 
@@ -187,6 +204,9 @@ in the Era of Deep Learning
 | ShEPhERD     | ShEPhERD: diffusing shape, electrostatics, and pharmacophores for bioisosteric drug design | 2025 | ICLR               | [[code]](https://github.com/coleygroup/shepherd-score)  | Bioisosteric lignd design, shape & electrostatics & pharmacophore |
 | Delete       | Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein | 2025 | Nat. Mach. Intell. | [[code]](https://github.com/OdinZhang/Delete)           | /                                                            |
 | TransPharmer | Accelerating discovery of bioactive ligands with pharmacophore-informed generative models | 2025 | Nat. Commun.       | [[code]](https://github.com/iipharma/transpharmer-repo) | Scaffold elaboration, pharmacophore                          |
+| PhoreGen | Pharmacophore-oriented 3D molecular generation toward efficient feature-customized drug discovery | 2025 | Nat. Comput. Sci.       | [[code]](https://github.com/ppjian19/PhoreGen) | Pharmacophore                          |
+| ED2Mol | Electron-density-informed effective and reliable de novo molecular design and optimization with ED2Mol | 2025 | Nat. Mach. Intell.       | [[code]](https://github.com/pineappleK/ED2Mol) | Electron density                         |
+
 
 ### 4.3 Benchmarks, datasets, and tools <a name="4.3"></a>
 
@@ -213,3 +233,24 @@ in the Era of Deep Learning
 | DRAGONFLY          | Prospective de novo drug design with deep interactome learning | 2024 | Nat. Commun.       | [[code]](https://github.com/atzkenneth/dragonfly_gen)      | DTI prediction, generation, interaction network |
 | PSICHIC            | Physicochemical graph neural network for learning protein-ligand interaction fingerprints from sequence data | 2024 | Nat. Mach. Intell. | [[code]](https://github.com/huankoh/PSICHIC)               | Interaction fingerprints                        |
 | DeepBlock          | A deep learning approach for rational ligand generation with toxicity control via reactive building blocks | 2024 | Nat. Comput. Sci.  | [[code]](https://github.com/BioChemAI/DeepBlock)           | Target-conditioned generation, fragment         |
+
+
+# Contributing
+We welcome contributions from the community. To contribute, please fork this repository, apply your modifications, and open a pull request to the main branch.
+
+# License
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+# Citation
+If you find this repository useful for your research, please consider citing the following paper:
+
+```bibtex
+@article{wang2025modeling,
+  title={Modeling protein–ligand interactions for drug discovery in the era of deep learning},
+  author={Wang, Yuzhe and Li, Yibo and Chen, Jiaxiao and Lai, Luhua},
+  journal={Chemical Society Reviews},
+  year={2025},
+  publisher={The Royal Society of Chemistry},
+  doi={10.1039/D5CS00415B}
+}
+```
