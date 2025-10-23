@@ -51,7 +51,7 @@ modeling of protein–ligand interactions for drug discovery.
 | NRI-MD     | Neural relational inference to learn long-range allosteric interactions in proteins from molecular dynamics simulations | 2022 | Nat. Commun. | [[code]](https://github.com/juexinwang/NRI-MD)   |
 | ProtMD     | Pre-training of equivariant graph matching networks with conformation flexibility for drug binding | 2022 | Adv. Sci.    | [[code]](https://github.com/smiles724/ProtMD)    |
 | Dynaformer | From static to dynamic structures: improving binding affinity prediction with graph-based deep learning | 2024 | Adv. Sci.    | [[code]](https://github.com/Minys233/Dynaformer) |
-| MDbind | Spatio-temporal learning from molecular dynamics simulations for protein–ligand binding affinity prediction | 2025 | Bioinfomatics    | [[code]]([https://github.com/ICOA-SBC/MD_DL_BA](https://github.com/ICOA-SBC/MD_DL_BA)) |
+| MDbind | Spatio-temporal learning from molecular dynamics simulations for protein–ligand binding affinity prediction | 2025 | Bioinfomatics    | [[code]](https://github.com/ICOA-SBC/MD_DL_BA) |
 
 ### 1.3 Deep learning-accelerated sampling and trajectory generation <a name="1.3"></a>
 
@@ -65,7 +65,7 @@ modeling of protein–ligand interactions for drug discovery.
 | ------ | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ | --------------------------------- |
 | SPICE  | SPICE, a dataset of drug-like molecules and peptides for training machine learning potentials | 2023 | Sci. Data         | [[data]](https://zenodo.org/records/7338495) [[code]](https://github.com/openmm/spice-dataset) | QM calculations                   |
 | MISATO | MISATO: machine learning dataset of protein-ligand complexes for structure-based drug discovery | 2024 | Nat. Comput. Sci. | [[data]](https://zenodo.org/records/7711953) [[code]](https://github.com/t7morgen/misato-dataset/) | QM calculations & MD trajectories |
-| PLAS-20k | PLAS-20k: extended dataset of protein-ligand affinities from MD simulations for machine learning Applications | 2024 | Sci. Data | [[data]]([https://doi.org/10.6084/m9.figshare.c.6742521.v2](https://doi.org/10.6084/m9.figshare.c.6742521.v2)) | MD trajectories & MMPBSA calculations |
+| PLAS-20k | PLAS-20k: extended dataset of protein-ligand affinities from MD simulations for machine learning Applications | 2024 | Sci. Data | [[data]](https://doi.org/10.6084/m9.figshare.c.6742521.v2) | MD trajectories & MMPBSA calculations |
 | OMol25 | The Open Molecules 2025 (OMol25) dataset, evaluations, and models | 2025 | arXiv             | [[data]](https://huggingface.co/facebook/OMol25) [[code]](https://github.com/facebookresearch/fairchem) [[blog]](https://ai.meta.com/blog/meta-fair-science-new-open-source-releases/) | QM calculations                   |
 | DD-13M | Enhanced sampling, public dataset and generative model for drug-protein dissociation dynamics | 2025 | arXiv             | [[data]](https://huggingface.co/SZBL-IDEA)                   | MD trajectories                   |
 | qcMol | qcMol: a large-scale dataset of 1.2 million molecules with high-quality quantum chemical annotations for molecular representation learning | 2025 | BioRxiv             | [[webpage]](https://structpred.life.tsinghua.edu.cn/qcmol/)                   | QM calculations                   |
@@ -122,14 +122,14 @@ modeling of protein–ligand interactions for drug discovery.
 | ------------------ | ------------------------------------------------------------ | ---- | ------------------ | ------------------------------------------------------------ | ---------------------------------- |
 | BindingDB          | BindingDB: a web-accessible database of experimentally determined protein-ligand binding affinities | 2007 | NAR                | [[webpage]](https://www.bindingdb.org/rwd/bind/index.jsp)    | Database                           |
 | ChEMBL             | ChEMBL: a large-scale bioactivity database for drug discovery | 2012 | NAR                | [[webpage]](https://www.ebi.ac.uk/chembl/) [[code]](https://github.com/chembl/ChEMBL_Structure_Pipeline) | Database                           |
-| ZINC Database      | ZINC 15-ligand discovery for everyone                        | 2015 | JCIM               | [[webpage (ZINC-22)]](https://cartblanche22.docking.org/)    | Database                           |
+| ZINC Database      | ZINC 15-ligand discovery for everyone                        | 2015 | JCIM               | [[webpage]](https://cartblanche22.docking.org/)    | Database                           |
 | Enamine REAL Space | Generating multibillion chemical space of readily accessible screening compounds | 2020 | iScience           | [[webpage]](https://enamine.net/compound-collections/real-compounds) | Make-on-demand database            |
 | PoseBusters        | PoseBusters: AI-based docking methods fail to generate physically valid poses or generalise to novel sequences | 2024 | Chem. Sci.         | [[code]](https://github.com/maabuu/posebusters) [[doc]](https://posebusters.readthedocs.io/en/latest/) | Benchmark, pose quality check      |
 | Leak Proof PDBBind | Leak proof pdbbind: a reorganized dataset of protein-ligand complexes for more generalizable binding affinity prediction | 2024 | arXiv              | [[code]](https://github.com/THGLab/LP-PDBBind)               | Dataset split                      |
 | SPECTRA            | Evaluating generalizability of artificial intelligence models for molecular datasets | 2024 | Nat. Mach. Intell. | [[code]](https://github.com/mims-harvard/SPECTRA)            | Framework for model evaluation     |
 | SAIR               | SAIR: Enabling deep learning for protein-ligand lnteractions with a synthetic structural dataset | 2025 | BioRxiv            | [[data]](https://pub.sandboxaq.com/data/ic50-dataset)        | Database, AF3-predicted structures |
-| QUID               | Extending quantum-mechanical benchmark accuracy to biological ligand-pocket interactions | 2025 | Nat. Commun.            | [[data]]([https://github.com/MirelaVP/QUID)        | Benchmark, QM-level pocket-ligand interaction systems  |
-| BindFlow               | BindFlow: a free, user-friendly pipeline for absolute binding free energy calculations using free energy perturbation or MM(PB/GB)SA | 2025 | BioRxiv            | [[code]]([https://github.com/ale94mleon/BindFlow](https://github.com/ale94mleon/BindFlow))        | Tool, FEP & MM(PB/GB)SA pipeline |
+| QUID               | Extending quantum-mechanical benchmark accuracy to biological ligand-pocket interactions | 2025 | Nat. Commun.            | [[data]](https://github.com/MirelaVP/QUID)        | Benchmark, QM-level pocket-ligand interaction systems  |
+| BindFlow               | BindFlow: a free, user-friendly pipeline for absolute binding free energy calculations using free energy perturbation or MM(PB/GB)SA | 2025 | BioRxiv            | [[code]](https://github.com/ale94mleon/BindFlow)        | Tool, FEP & MM(PB/GB)SA pipeline |
 
 ## 3. End-to-End Structural Modeling <a name="3"></a>
 
@@ -155,7 +155,7 @@ modeling of protein–ligand interactions for drug discovery.
 | Boltz-1              | Boltz-1: democratizing biomolecular interaction modeling     | 2024 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[blog]](https://jclinic.mit.edu/boltz-1/) | /                                         |
 | Boltz-2              | Towards accurate and efficient binding affinity prediction   | 2025 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[design-code]](https://github.com/recursionpharma/synflownet-boltz) | FEP-level affinity prediciton             |
 | Chai-2               | Zero-shot antibody design in a 24-well plate                 | 2025 | BioRxiv                  | [[blog]](https://www.chaidiscovery.com/news/introducing-chai-2) | Minibinder & antibody prediction & design |
-| RF3               | Accelerating Biomolecular Modeling with AtomWorks and RF3                 | 2025 | BioRxiv                  | [[code]]([https://github.com/RosettaCommons/atomworks](https://github.com/RosettaCommons/atomworks)) | AtomWorks framework |
+| RF3               | Accelerating Biomolecular Modeling with AtomWorks and RF3                 | 2025 | BioRxiv                  | [[code]](https://github.com/RosettaCommons/atomworks) | AtomWorks framework |
 
 
 ## 4. Structure-Based *De Novo* Drug Design with Deep Generative Models <a name="4"></a>
