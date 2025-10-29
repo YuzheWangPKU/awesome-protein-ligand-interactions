@@ -156,6 +156,7 @@ modeling of protein–ligand interactions for drug discovery.
 | Boltz-2              | Towards accurate and efficient binding affinity prediction   | 2025 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[design-code]](https://github.com/recursionpharma/synflownet-boltz) | FEP-level affinity prediciton             |
 | Chai-2               | Zero-shot antibody design in a 24-well plate                 | 2025 | BioRxiv                  | [[blog]](https://www.chaidiscovery.com/news/introducing-chai-2) | Minibinder & antibody prediction & design |
 | RF3               | Accelerating Biomolecular Modeling with AtomWorks and RF3                 | 2025 | BioRxiv                  | [[code]](https://github.com/RosettaCommons/atomworks) | AtomWorks framework |
+| Pearl               | Pearl: A Foundation Model for Placing Every Atom in the Right Location                 | 2025 | arXiv                  | / | Synthetic data, SO(3)-equivariance |
 
 
 ## 4. Structure-Based *De Novo* Drug Design with Deep Generative Models <a name="4"></a>
