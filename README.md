@@ -188,6 +188,7 @@ modeling of protein–ligand interactions for drug discovery.
 model               |
 | DynamicFlow     | Integrating protein dynamics into structure-based drug design via full-atom stochastic flows | 2025 | ICLR               | /                                                            | Non-autoregressive, dynamic pocket               |
 | DrugFlow & FlexFlow     | Multi-domain Distribution Learning for De Novo Drug Design | 2025 | ICLR               | [[code]](https://github.com/LPDI-EPFL/DrugFlow)                                                            | Non-autoregressive, flexible side-chains               |
+| SynGFN     | SynGFN: learning across chemical space with generative flow-based molecular discovery | 2025 | Nat. Comput. Sci.               | [[code]](https://github.com/ChemloverYuchen/SynGFN)                                                            | Autoregressive, codesigns synthetic routes             |
 
 ### 4.2 Ligand-based design and lead optimization methods <a name="4.2"></a>
 
