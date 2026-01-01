@@ -9,6 +9,8 @@ modeling of protein–ligand interactions for drug discovery.
   <img src="overview.png" width="512">
 </p>
 
+**Note**: This repository is not intended to be an exhaustive or definitive collection. The included papers and resources were selected based on the authors’ perspectives and interests, and we sincerely apologize for any important work that may have been unintentionally omitted. We warmly welcome community contributions and suggestions to help improve and expand this resource.
+
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [1. Deep Learning-Augmented Molecular Dynamics](#1)
@@ -89,6 +91,7 @@ modeling of protein–ligand interactions for drug discovery.
 | DeltaDock   | Deltadock: a unified framework for accurate, efficient, and physically reliable molecular docking | 2024 | NeurIPS            | [[code]](https://github.com/jiaxianyan/DeltaDock)       | Rigid receptor      |
 | DiffBindFR  | DiffBindFR: an SE (3) equivariant network for flexible protein-ligand docking | 2024 | Chem. Sci.         | [[code]](https://github.com/HBioquant/DiffBindFR)       | Side-chain flexible |
 | DynamicBind | DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model | 2024 | Nat. Commun.       | [[code]](https://github.com/luwei0917/DynamicBind)      | Fully flexible      |
+| PackDock | Flexible protein–ligand docking with diffusion-based side-chain packing | 2025 | PNAS       | [[code]](https://github.com/Zhang-Runze/PackDock)      | Side-chain flexible      |
 
 ### 2.2 Deep learning scoring functions and binding affinity prediction <a name="2.2"></a>
 
@@ -114,6 +117,7 @@ modeling of protein–ligand interactions for drug discovery.
 | DrugCLIP     | DrugClip: contrastive protein-molecule representation learning for virtual screening | 2023 | NeurIPS           | [[code]](https://github.com/bowen-gao/DrugCLIP) [[webpage]](https://drug-the-whole-genome.yanyanlan.com/) | CLIP architecture |
 | OpenVS       | An artificial intelligence accelerated virtual screening platform for drug discovery | 2024 | Nat. Commun.      | [[code]](https://github.com/gfzhou/OpenVS)                   | Active learning   |
 | /            | Rapid traversal of vast chemical space using machine learning-guided docking screens | 2025 | Nat. Comput. Sci. | [[code]](https://github.com/carlssonlab/conformalpredictor)  | /                 |
+| FragmentScope            | FragmentScope - exploring the fragment space with learned surface representations | 2025 | BioRxiv | [[code]](https://github.com/LPDI-EPFL/FragmentScope)  | Surface-based fragment screening |
 
 
 ### 2.4 Benchmarks, datasets, and tools <a name="2.4"></a>
@@ -154,9 +158,11 @@ modeling of protein–ligand interactions for drug discovery.
 | Protenix             | Protenix-advancing structure prediction through a comprehensive AlphaFold3 reproduction | 2024 | BioRxiv            | [[code]](https://github.com/bytedance/Protenix) [[server]](https://protenix-server.com/login) | /                                         |
 | Boltz-1              | Boltz-1: democratizing biomolecular interaction modeling     | 2024 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[blog]](https://jclinic.mit.edu/boltz-1/) | /                                         |
 | Boltz-2              | Towards accurate and efficient binding affinity prediction   | 2025 | BioRxiv            | [[code]](https://github.com/jwohlwend/boltz) [[design-code]](https://github.com/recursionpharma/synflownet-boltz) | FEP-level affinity prediciton             |
-| Chai-2               | Zero-shot antibody design in a 24-well plate                 | 2025 | BioRxiv                  | [[blog]](https://www.chaidiscovery.com/news/introducing-chai-2) | Minibinder & antibody prediction & design |
+| GeoFlow-V2              | GeoFlow-V2: A Unified Atomic Diffusion Model for Protein Structure Prediction and De Novo Design     | 2025 | BioRxiv            | [[server]](https://prot.design/) | Protein Binder & antibody design                                         |
+| Chai-2               | Zero-shot antibody design in a 24-well plate                 | 2025 | BioRxiv                  | [[blog]](https://www.chaidiscovery.com/news/introducing-chai-2) | Minibinder & antibody design |
 | RF3               | Accelerating Biomolecular Modeling with AtomWorks and RF3                 | 2025 | BioRxiv                  | [[code]](https://github.com/RosettaCommons/atomworks) | AtomWorks framework |
 | Pearl               | Pearl: A Foundation Model for Placing Every Atom in the Right Location                 | 2025 | arXiv                  | / | Synthetic data, SO(3)-equivariance |
+| SeedFold               | SeedFold: Scaling Biomolecular Structure Prediction                 | 2026 | arXiv                  | [[webpage]](https://seedfold.github.io/) | Synthetic data, linear triangular attention |
 
 
 ## 4. Structure-Based *De Novo* Drug Design with Deep Generative Models <a name="4"></a>
@@ -188,6 +194,7 @@ modeling of protein–ligand interactions for drug discovery.
 model               |
 | DynamicFlow     | Integrating protein dynamics into structure-based drug design via full-atom stochastic flows | 2025 | ICLR               | /                                                            | Non-autoregressive, dynamic pocket               |
 | DrugFlow & FlexFlow     | Multi-domain Distribution Learning for De Novo Drug Design | 2025 | ICLR               | [[code]](https://github.com/LPDI-EPFL/DrugFlow)                                                            | Non-autoregressive, flexible side-chains               |
+| RxnFlow     | Generative Flows on Synthetic Pathway for Drug Design | 2025 | ICLR               | [[code]](https://github.com/SeonghwanSeo/RxnFlow)                                                            | Autoregressive, codesigns synthetic routes               |
 | SynGFN     | SynGFN: learning across chemical space with generative flow-based molecular discovery | 2025 | Nat. Comput. Sci.               | [[code]](https://github.com/ChemloverYuchen/SynGFN)                                                            | Autoregressive, codesigns synthetic routes             |
 
 ### 4.2 Ligand-based design and lead optimization methods <a name="4.2"></a>
@@ -220,7 +227,7 @@ model               |
 | POKMOL-3D       | How good are current pocket-based 3D generative models?: The benchmark set and evaluation of protein pocket-based 3D molecular generative models | 2024 | JCIM              | [[code]](https://github.com/haoyang9688/POKMOL3D)            | Benchmark          |
 | Durian          | Durian: A comprehensive benchmark for structure-based 3d molecular generation | 2024 | JCIM              | [[code]](https://github.com/19990210nd/Durian)               | Benchmark          |
 | CBGBench        | CBGBench: fill in the blank of protein-molecule complex binding graph | 2025 | ICLR              | [[code]](https://github.com/EDAPINENUT/CBGBench)             | Benchmark          |
-
+| MolGenBench        | Benchmarking Real-World Applicability of Molecular Generative Models from De novo Design to Lead Optimization with MolGenBench | 2025 | BioRxiv              | [[code]](https://github.com/CAODH/MolGenBench)             | Benchmark          |
 
 ## 5. Sequence-Based Methods for Drug Discovery <a name="5"></a>
 
