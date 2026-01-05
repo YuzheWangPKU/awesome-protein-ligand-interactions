@@ -227,6 +227,7 @@ modeling of protein–ligand interactions for drug discovery.
 | Durian          | Durian: A comprehensive benchmark for structure-based 3d molecular generation | 2024 | JCIM              | [[code]](https://github.com/19990210nd/Durian)               | Benchmark          |
 | CBGBench        | CBGBench: fill in the blank of protein-molecule complex binding graph | 2025 | ICLR              | [[code]](https://github.com/EDAPINENUT/CBGBench)             | Benchmark          |
 | MolGenBench        | Benchmarking Real-World Applicability of Molecular Generative Models from De novo Design to Lead Optimization with MolGenBench | 2025 | BioRxiv              | [[code]](https://github.com/CAODH/MolGenBench)             | Benchmark          |
+| TarPass        | Revisiting Target-Aware de novo Molecular Generation with TarPass: Between Rational Design and Texas Sharpshooter | 2026 | ChemRxiv              | [[code]](https://github.com/sorui-qin/TarPass)             | Benchmark          |
 
 ## 5. Sequence-Based Methods for Drug Discovery <a name="5"></a>
 
