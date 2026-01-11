@@ -71,6 +71,7 @@ modeling of protein–ligand interactions for drug discovery.
 | OMol25 | The Open Molecules 2025 (OMol25) dataset, evaluations, and models | 2025 | arXiv             | [[data]](https://huggingface.co/facebook/OMol25) [[code]](https://github.com/facebookresearch/fairchem) [[blog]](https://ai.meta.com/blog/meta-fair-science-new-open-source-releases/) | QM calculations                   |
 | DD-13M | Enhanced sampling, public dataset and generative model for drug-protein dissociation dynamics | 2025 | arXiv             | [[data]](https://huggingface.co/SZBL-IDEA) [[webpage]](https://aimm.szbl.ac.cn/database/ddd/#/home)                   | MD trajectories                   |
 | qcMol | qcMol: a large-scale dataset of 1.2 million molecules with high-quality quantum chemical annotations for molecular representation learning | 2025 | BioRxiv             | [[webpage]](https://structpred.life.tsinghua.edu.cn/qcmol/)                   | QM calculations                   |
+| BMS25 | Biomolecular Multiscale Simulation (BMS25) Dataset to Train Neural Network Potentials for QM/MM Settings with Electrostatic Embedding | 2025 | ChemRxiv             | [[data]](https://doi.org/10.3929/ethz-c-000788484)                   | QM/MM calculations                   |
 
 ## 2. Deep Learning-Enhanced Molecular Docking and Virtual Screening <a name="2"></a>
 
