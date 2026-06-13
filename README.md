@@ -94,6 +94,7 @@ modeling of protein–ligand interactions for drug discovery.
 | DiffBindFR  | DiffBindFR: an SE (3) equivariant network for flexible protein-ligand docking | 2024 | Chem. Sci.         | [[code]](https://github.com/HBioquant/DiffBindFR)       | Side-chain flexible |
 | DynamicBind | DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model | 2024 | Nat. Commun.       | [[code]](https://github.com/luwei0917/DynamicBind)      | Fully flexible      |
 | PackDock | Flexible protein–ligand docking with diffusion-based side-chain packing | 2025 | PNAS       | [[code]](https://github.com/Zhang-Runze/PackDock)      | Side-chain flexible      |
+| Matcha | Matcha: Multi-Stage Riemannian Flow Matching for Accurate and Physically Valid Molecular Docking | 2025 | arXiv       | [[code]](https://github.com/LigandPro/Matcha)      | Rigid receptor      |
 
 ### 2.2 Deep learning scoring functions and binding affinity prediction <a name="2.2"></a>
 
